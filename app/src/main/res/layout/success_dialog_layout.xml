@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#16B978"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="10dp"
+    app:strokeWidth="0dp"
+    app:strokeColor="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:id="@+id/l2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                tools:ignore="UselessParent">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/splash"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_vertical"
+                    app:lottie_autoPlay="true"
+                    app:lottie_rawRes="@raw/success"
+                    />
+
+                <TextView
+                    android:id="@+id/productName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Success"
+                    android:layout_marginStart="30dp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="24sp"
+                    android:textColor="@color/white"
+                    tools:ignore="RtlCompat" />
+
+                           </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

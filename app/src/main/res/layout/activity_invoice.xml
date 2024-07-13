@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    android:background="@color/white"
+    tools:context=".InvoiceActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Elon Money"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="36sp"
+        android:fontFamily="@font/dancing_script"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/t1"
+        android:textColor="#F86E6E"
+        android:fontFamily="@font/futuramedium"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/dateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t1"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/futuramedium"
+                android:layout_toLeftOf="@id/date"
+                android:text="Date:"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/date"
+        android:text="06:52:03 PM"
+        android:textColor="#F86E6E"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/futuramedium"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/timeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/time"
+        android:layout_below="@id/date"
+        android:text="Time:"
+        android:fontFamily="@font/futuramedium"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/invoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/time"
+        android:text="#123456"
+        android:fontFamily="@font/futuramedium"
+        android:textColor="#F86E6E"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/invoiceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/invoice"
+        android:layout_below="@id/time"
+        android:text="Invoice No:"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/futuramedium"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/invoice"
+        android:text="To:"
+        android:fontFamily="@font/futuramedium"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/nameLabel"
+        android:layout_below="@id/invoice"
+        android:text="Rafay"
+        android:fontFamily="@font/futurabold"
+        android:textColor="#F86E6E"
+        android:layout_marginTop="17dp"
+        android:layout_marginStart="5dp"
+        android:textSize="14sp"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/name"
+        android:background="#0094A6"
+        android:layout_marginTop="20dp"/>
+
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:id="@+id/itemLabel"
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+                    android:text="Item"
+                    android:fontFamily="@font/futuramedium"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/priceLabel"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Price (USD)"
+                    android:fontFamily="@font/futuramedium"
+                    android:layout_marginStart="20dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/quantityLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="25dp"
+                    android:fontFamily="@font/futuramedium"
+                    android:text="Qty."
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/l1"
+                android:background="#0094A6"
+                android:layout_marginTop="10dp"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+         />
+
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/recyclerView"
+        android:background="#0094A6"
+        android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/usd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/line3"
+                android:text="USD"
+                android:fontFamily="@font/futuramedium"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/usd"
+        android:layout_below="@id/line3"
+        android:text="96,000,000,000"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/futuramedium"
+        android:layout_marginEnd="10dp"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/totalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/total"
+        android:layout_below="@id/line3"
+        android:text="Total:"
+        android:textColor="#0062AF"
+        android:fontFamily="@font/futuramedium"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textColor="#838383"
+        android:text="* This invoice is generated by Elon Money with the purpose of just fun. Share with your family and friends as soon as possible."
+        android:layout_below="@id/totalLabel"
+        android:fontFamily="@font/futuramedium"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+
+    <TextView
+
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:text="Thank you for your purchase from Elon Money"
+        android:layout_below="@id/text"
+        android:textColor="#F86E6E"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/futuramedium"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="30dp"
+        />
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/export"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentBottom="true"
+        android:text="Export"
+        app:backgroundTint="#E0E4FD"
+        app:cornerRadius="35sp"
+        app:icon="@drawable/next" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="20dp"
+        android:text="Share"
+        app:backgroundTint="#E0E4FD"
+        android:layout_alignParentBottom="true"
+        app:cornerRadius="35sp"
+        app:icon="@drawable/next" />
+
+</RelativeLayout>

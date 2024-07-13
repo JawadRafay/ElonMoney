@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textColor="#0062AF"
+        android:fontFamily="@font/futuramedium"
+        android:text="Yacht History Supreme - The Most Expensive Yacht In The World"
+        android:textAlignment="center"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="4,800,000,000"
+        android:fontFamily="@font/futuramedium"
+        android:textAlignment="center"
+        android:layout_marginStart="20dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="30dp"
+        android:text="0"
+        android:fontFamily="@font/futuramedium"
+        android:textColor="#0062AF"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
